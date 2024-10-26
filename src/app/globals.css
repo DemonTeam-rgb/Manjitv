@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #162130; */
+  }
+}
+
+body {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.line {
+  height: 1px;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, #000000 50%, rgba(0, 0, 0, 0.00) 100%);
+  opacity: .1;
+  width: 100%;
+}
+
+.probox {
+  margin: 6px;
+  height: 28px;
+  background: transparent;
+  border: 4 none rgb(255, 255, 255);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.vline {
+  width: 1px; 
+  position: absolute;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000000 50%, rgba(0, 0, 0, 0.00) 100%);
+  opacity: .1;
+}
+
+.fam {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.largeImg {
+  border-bottom: 1px solid var(--primaryColor);
+  background-position: left calc((50vw - 170px) - 340px) top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.genNav::-webkit-scrollbar {
+  height:2px;
+  width: 5px;
+}
+
+.genNav::-webkit-scrollbar-track {
+  width: 5px;
+}
+
+.genNav::-webkit-scrollbar-button {
+  width: 5px;
+}
+
+.genNav::-webkit-scrollbar-corner {
+  width: 5px;
+}
+
+.genNav::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* ::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  overflow: visible;
+}
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-background-color);
+}
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 100px;
+} */
+
+
+
+
+ 
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.my-video {
+  width: 100%;
+}
+
+.main-box {
+  color: #fff;
+}
+
+.title-anime h2 {
+  color: #FCA311;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.rating {
+  border-bottom: 1px solid #4D4D4D;
+  padding-bottom: 7px;
+}
+
+.episode_name {
+  font-size: 1.5rem;
+  width: 90%;
+  color: #fff;
+  padding: 7px 0;
+}
+
+.anime_details {
+  font-weight: 500;
+}
+
+.episode-box {
+  padding: 0 1rem;
+}
+
+.episode-box p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.episode {
+  margin: 5px 0 1.3rem 0;
+}
+
+.title-anime_width {
+  width: 44%;
+  line-height: 1.3rem;
+}
+
+.all_episode_button {
+  margin: 1rem;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  width: 90%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.four-row {
+  border-top: 1px solid #333;
+}
+
+
+.popup_box {
+  padding: 1rem;
+}
+
+.close-btn {
+  color: #fff !important;
+}

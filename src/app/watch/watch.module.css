@@ -1,0 +1,72 @@
+.my-video {
+    width: 100%;
+}
+
+.main-box {
+    color: #fff;
+}
+
+.title-anime h2 {
+    color: #FCA311;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.rating {
+    border-bottom: 1px solid #4D4D4D;
+    padding-bottom: 7px;
+}
+
+.episode_name {
+    font-size: 1.5rem;
+    width: 90%;
+    color: #fff;
+    padding: 7px 0;
+}
+
+.anime_details {
+    font-weight: 500;
+}
+
+.episode-box {
+    padding: 0 1rem;
+}
+
+.episode-box p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.episode {
+    margin: 5px 0 1.3rem 0;
+}
+
+.title-anime_width {
+    width: 44%;
+    line-height: 1.3rem;
+}
+
+.all_episode_button {
+    margin: 1rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    width: 90%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.four-row {
+    border-top: 1px solid #333;
+}
+
+
+.popup_box {
+    padding: 1rem;
+}
+
+.close-btn {
+    color: #fff !important;
+}
