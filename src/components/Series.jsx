@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import styles from "@/css/test.module.css"
+import styles from "@/css/test.module.css";
 
 const Series = () => {
   const router = useRouter();
@@ -25,13 +25,13 @@ const Series = () => {
   }, []);
 
   return (
-    <div className="bg-black w-screen md:w-full md:h-[250px] px-4 py-8">
+    <div className="bg-black w-full px-4 py-8">
       <div className="text-[1.25rem] text-white font-bold mb-4">
         {alldata && "Latest Series"}
       </div>
 
       {/* Slider with Limit 10 */}
-      <div className={styles.cards} >
+      <div className={`${styles.cards} grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8`}>
         {alldata &&
           alldata?.latestSeriesArry
             ?.slice(0, 10) // Limit to 10 items
@@ -42,17 +42,15 @@ const Series = () => {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8 }}
-                className={styles.card}
+                className={`${styles.card} relative group overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition duration-300`}
               >
                 {/* Card Image */}
-                <div className={styles.image}>
                 <img
-                  className="rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
+                  className="w-full h-full object-cover rounded-lg"
                   src={item.imgSrc}
                   alt={item.title}
-                  style={{ width: '150px', height: '225px', objectFit: 'cover' }}
+                  style={{ height: '225px' }}
                 />
-                </div>
 
                 {/* Card Title and Vote (Initially Hidden) */}
                 <div className="absolute inset-0 flex flex-col items-center justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50 rounded-lg px-2 py-2">
